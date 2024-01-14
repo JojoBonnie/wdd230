@@ -5,20 +5,40 @@
     <meta name="description" content="WDD 230 - Web Frontend Development, Jojo Masebe course assignment portal">
     <meta name="author" content="Jojo Masebe">
     <title>Jojo Masebe - WDD 230 - Web Frontend Development</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
     <header>
         <h1>WDD 230: Web Frontend Development</h1>
-        </header>
+        <img src="images/profile.jpg" width="auto" alt="profile_picture">
+        <span>Johannes Masebe</span>
+    </header>
         <nav>
-
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#chamber">Chamber</a></li>
+                <li><a href="#site-plan">Site Plan</a></li>
+                <li><a href="#form">Form</a></li>
+            </ul>
         </nav>
         <main>
-
+            <h1>WDD 230: Web Frontend Development</h1>
+            <section class="card">
+                <h2>Learning Activities</h2>
+                <ul>
+                    <li><a href="#">Activity 1</a></li>
+                    <li><a href="#">Activity 2</a></li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Information</h2>         
+            </section>
         </main>
         <footer>
-            <p>&copy; 2020 Jojo Masebe</p>
+            <p>&copy; <span id="currentYear"></span> Johannes Masebe, South Africa</p>
+            <p id="lastModified"></p>
         </footer>
-</body>
+        <script src="scripts/getDates.js"></script>
+    </body>
 </html>

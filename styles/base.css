@@ -1,0 +1,49 @@
+/* base.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Your background color choice */
+    color: #333; /* Your text color choice */
+}
+
+header {
+    background-color: #007bff; /* Your header background color choice */
+    color: #fff; /* Your header text color choice */
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column; /* Display links vertically in mobile view */
+    align-items: center;
+    background-color: #343a40; /* Your navigation background color choice */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Your navigation link color choice */
+    padding: 0.5rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.card {
+    background-color: #fff; /* Your card background color choice */
+    border: 1px solid #ddd; /* Your card border color choice */
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #007bff; /* Your footer background color choice */
+    color: #fff; /* Your footer text color choice */
+}
