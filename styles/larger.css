@@ -1,12 +1,29 @@
-@media screen and (min-width: 500px) {
-    nav {
-        flex-direction: row; /* Display links horizontally in larger views */
-        justify-content: space-around;
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 10px;
     }
 
     main {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        grid-template-columns: 1fr 1fr; /* Set two columns of equal width */
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    main h1 {
+        grid-column: 1 / -1; /* Make h1 span all columns */
+        text-align: center; /* Optional: Center the h1 text */
+        margin-bottom: 0;
+    }
+
+    .card {
+        /* Cards will automatically fill in the grid's columns */
+        margin: 0 0 20px 0;
     }
 }
