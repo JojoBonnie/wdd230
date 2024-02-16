@@ -10,20 +10,19 @@
 
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Set two columns of equal width */
+        grid-template-columns: 1fr 1fr;
         gap: 20px;
         max-width: 1200px;
         margin: 0 auto;
     }
 
     main h1 {
-        grid-column: 1 / -1; /* Make h1 span all columns */
-        text-align: center; /* Optional: Center the h1 text */
+        grid-column: 1 / -1;
+        text-align: center; 
         margin-bottom: 0;
     }
 
     .card {
-        /* Cards will automatically fill in the grid's columns */
         margin: 0 0 20px 0;
     }
 }

@@ -1,5 +1,3 @@
-// getDates.js
-
 document.addEventListener("DOMContentLoaded", function () {
     // Populate current year
     document.getElementById('currentYear').textContent = new Date().getFullYear();
