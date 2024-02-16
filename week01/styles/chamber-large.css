@@ -1,0 +1,11 @@
+@media (min-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    nav a {
+        display: inline;
+        padding: 0;
+    }
+
+}
