@@ -1,0 +1,47 @@
+@media (min-width: 768px) {
+    .navigation {
+		display: flex;
+        justify-content: center;
+
+	}
+
+    .navigation ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation ul li {
+        margin: 0 10px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+        text-align: center; 
+        margin-bottom: 0;
+    }
+
+    .card {
+        margin: 0 0 20px 0;
+    }
+
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+    #mode {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+}

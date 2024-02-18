@@ -1,55 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="WDD 230 - Web Frontend Development, Johannes Masebe course assignment portal">
-        <meta name="author" content="Johannes Masebe">
-        <title>Johannes Masebe - WDD 230 - Web Frontend Development</title>
-        <link rel="icon" href="favicon.ico">
-        <link rel="stylesheet" href="styles/base.css">
-        <link rel="stylesheet" href="styles/larger.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
-        <meta property="og:title" content="Johannes Masebe - WDD 230 - Web Frontend Development">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="https://www.capetown.travel/wp-content/uploads/2022/06/Robben-Island.webp">
-        <meta property="og:url" content="https://www.capetown.travel/">
-    </head>
-    <body>
-        <header>
-            <img src="images/profile.webp" alt="profile_picture">
-            <span>Johannes Masebe</span>
-            <div id="mode" title="Dark Mode">
-                🌙
-            </div>
-        </header>
-        <button id="menu" title="Menu"></button>
-        <nav class="navigation">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="WDD 230 - Web Frontend Development, Johannes Masebe course assignment portal">
+    <meta name="author" content="Johannes Masebe">
+    <title>Johannes Masebe - WDD 230 - Web Frontend Development</title>
+    <link rel="icon" href="/chamber/images/favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
+    <meta property="og:title" content="Johannes Masebe - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.capetown.travel/wp-content/uploads/2022/06/Robben-Island.webp">
+    <meta property="og:url" content="https://www.capetown.travel/">
+</head>
+<body>
+    <header>
+        <img src="images/profile.webp" alt="profile_picture">
+        <span>Johannes Masebe</span>
+        <div id="mode" title="Toggle Dark Mode" onclick="toggleDarkMode()">🌙</div>
+        <button id="menu" title="Menu" onclick="toggleMenu()">☰</button>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="#site-plan">Site Plan</a></li>
+            <li><a href="#form">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <picture>
+            <img src="images/cape_town_africa_temple.webp" alt="Favorite Temple" class="hero-image">
+        </picture>
+        <div class="overlay">Cape Town Temple</div>
+        <h1>WDD 230: Web Frontend Development</h1>
+        <section class="card">
+            <h2>Learning Activities</h2>
             <ul>
-                <li class="active"><a href="#home">Home</a></li>
-                <li><a href="week01/chamber-site-plan.html">Chamber</a></li>
-                <li><a href="#site-plan">Site Plan</a></li>
-                <li><a href="#form">Form</a></li>
+                <li><a href="week01/holygrail.html">Week 1 Activity</a></li>
+                <li><a href="week02/design.html">Week 2 Activity</a></li>
+                <li><a href="week02/design.html">Week 3 Activity</a></li>
+                <li><a href="week02/design.html">Week 4 Activity</a></li>
+                <li><a href="week02/design.html">Week 5 Activity</a></li>
+                <li><a href="week02/design.html">Week 6 Activity</a></li>
             </ul>
-        </nav>
-        <main>
-            <h1>WDD 230: Web Frontend Development</h1>
-            <section class="card">
-                <h2>Learning Activities</h2>
-                <ul>
-                    <li><a href="week01/holygrail.html">Week 1 Activity</a></li>
-                    <li><a href="week02/design.html">Week 2 Activity</a></li>
-                </ul>
-            </section>
-            <section class="card">
-                <h2>Information</h2>         
-            </section>
-        </main>
-        <footer>
-            <p>&copy; <span id="currentYear"></span> Johannes Masebe, South Africa</p>
-            <p id="lastModified"></p>
-        </footer>
-        <script src="scripts/getDates.js"></script>
-        <script src="scripts/navigationMenu.js"></script>
-    </body>
+        </section>
+        <section class="card">
+            <h2>Information</h2>         
+        </section>
+        <!-- Embed Google Map -->
+        <iframe src="https://www.google.com/maps/embed/v1/place?key=
+        &q=Space+Needle,Seattle+WA" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Johannes Masebe, South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/navigationMenu.js"></script>
+    <script src="scripts/darkModeToggle.js"></script>
+</body>
 </html>
