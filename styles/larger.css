@@ -1,10 +1,16 @@
 @media (min-width: 768px) {
-    nav ul {
+    .navigation {
+		display: flex;
+        justify-content: center;
+
+	}
+
+    .navigation ul {
         display: flex;
         justify-content: center;
     }
 
-    nav ul li {
+    .navigation ul li {
         margin: 0 10px;
     }
 
@@ -25,4 +31,17 @@
     .card {
         margin: 0 0 20px 0;
     }
+
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+    #mode {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
 }
