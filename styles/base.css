@@ -115,6 +115,6 @@ footer {
     color: #ffffff;
 }
 
-.dark-mode header, .dark-mode footer { /* Specific dark mode styles for header and footer */
+.dark-mode header, .dark-mode footer .dark-mode section { /* Specific dark mode styles for header and footer */
     background-color: #000000;
 }
