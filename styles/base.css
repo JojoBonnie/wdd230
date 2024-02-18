@@ -4,15 +4,17 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
 }
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     background-color: #333;
     color: #fff;
     padding: 20px;
+    position: relative; /* For absolute positioning of menu and mode icons */
 }
 
 header img {
@@ -24,6 +26,12 @@ header span {
     font-size: 1.5em;
 }
 
+#mode {
+    cursor: pointer;
+    position: absolute;
+    right: 60px; /* Adjust based on layout */
+}
+
 h1 {
     font-size: 2rem;
     text-align: center;
@@ -31,7 +39,10 @@ h1 {
 
 .navigation {
     background-color: grey;
-    display: none;
+}
+
+.navigation.active { /* Adjusted class for showing the menu */
+    display: block;
 }
 
 .navigation ul {
@@ -52,35 +63,34 @@ h1 {
     text-decoration: none;
 }
 
-.navigation li:hover {
+.navigation li:hover, .navigation .active {
     background-color: rgba(255,255,255,0.2);
 }
 
-.navigation .active {
-    background-color: rgba(0,0,0,0.3);
-}
-
-.open {
-	display: block;
-}
-
 #menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: #fff;
- 	position: absolute;
-	top: 1rem;
-	right: 1rem;
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
 }
 
-#menu::before {
-	content: "☰";
+.hero-image {
+    width: 100%; 
+    height: auto;
 }
 
-#menu.open::before {
-	content: "X";
-	font-size: x-large;
+.overlay {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); 
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
 
 .card {
@@ -91,7 +101,6 @@ h1 {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-
 footer {
     background-color: #333;
     color: white;
@@ -101,7 +110,11 @@ footer {
     bottom: 0;
 }
 
-.dark {
+.dark-mode { /* Styles for dark mode */
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode header, .dark-mode footer { /* Specific dark mode styles for header and footer */
     background-color: #000000;
-    color: #fff;
 }
