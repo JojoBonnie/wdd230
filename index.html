@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <img src="images/profile.webp" alt="profile_picture">
+        <img src="images/profile_pic.webp" alt="profile_picture">
         <span>Johannes Masebe</span>
         <div id="mode" title="Toggle Dark Mode" onclick="toggleDarkMode()">🌙</div>
         <button id="menu" title="Menu" onclick="toggleMenu()">☰</button>
@@ -34,9 +34,11 @@
     <main>
         <div class="hero">
             <picture>
-                <img src="images/cape_town_africa_temple.webp" alt="Favorite Temple" class="hero-image">
+                <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 960px)">
+                <img src="images/hero-large.webp" alt="Favorite Temple" class="hero-image" width="100%" height="auto">
             </picture>
-            <div class="overlay">Cape Town Temple</div>     
+            <div class="overlay">Johannesburg Temple</div>     
         </div>
         
         <h1>WDD 230: Web Frontend Development</h1>
@@ -52,11 +54,14 @@
             </ul>
         </section>
         <section class="card">
-            <h2>Information</h2>         
+            <h2>Information</h2>
+            <p><span class="label">Current Weather: </span><span class="weather" id="weather-info"></span></p>
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>         
         </section>
         <section class="card" id="map-card">
-            <iframe src="https://www.google.com/maps/d/embed?mid=1lhs71HbZ6S6cAR6VQVrpW2dolhw&hl=en&ehbc=2E312F" width="100%" height="480"></iframe>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1W6FiG580WItytjzonX7QIFkzYoZXh1I&hl=en&ehbc=2E312F" title="maps" width="100%" height="480" loading="lazy"></iframe>
         </section>
+        
     </main>
     <footer>
         <p>&copy; <span id="currentYear"></span> Johannes Masebe, South Africa</p>
@@ -65,5 +70,6 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/navigationMenu.js"></script>
     <script src="scripts/darkModeToggle.js"></script>
+    <script src="scripts/app.js"></script>
 </body>
 </html>

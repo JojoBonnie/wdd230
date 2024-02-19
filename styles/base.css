@@ -45,9 +45,13 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-size: 1.2rem;
+}
+
 .navigation {
     display: none;
-    background-color: grey;
+    background-color: #121212;
 }
 
 .navigation.active { 
@@ -106,9 +110,13 @@ h1 {
     color: #fff;
     padding: 20px 0 20px 0;
     text-align: center;
+    text-wrap: nowrap;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     background-color: white;
     padding: 20px;
     border-radius: 8px;
@@ -131,4 +139,9 @@ footer {
 
 .dark-mode header, .dark-mode footer .dark-mode section { /* Specific dark mode styles for header and footer */
     background-color: #000000;
+}
+
+#visits {
+	font-weight: bolder;
+	font-size: larger;
 }

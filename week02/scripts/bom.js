@@ -1,6 +1,3 @@
-/*
-declare three const variables that hold references to the input, button, and .list elements.
-*/
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
