@@ -1,39 +1,18 @@
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .navigation {
 		display: flex;
         justify-content: center;
-
+        background-color: rgba(0, 0, 0, 0);
 	}
 
-    .navigation ul {
+    .navigation a {
         display: flex;
         justify-content: center;
-    }
-
-    .navigation ul li {
         margin: 0 10px;
     }
 
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    main h1 {
-        grid-column: 1 / -1;
-        text-align: center; 
-        margin-bottom: 0;
-    }
-
-    .card {
-        margin: 0 0 20px 0;
-    }
-
     #menu {
-		display: none; /* hide hamburger button */
+		display: none;
 	}
 
     #mode {
@@ -44,4 +23,30 @@
         cursor: pointer;
     }
 
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #cta-overlay {
+        width: 50%;
+        padding: 5rem;
+    }
+
+    #content-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .card {
+        width: 30%;
+        margin: 1rem 0 1rem 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 1rem;
+        border-radius: 10px;
+    }
 }

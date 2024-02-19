@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Lazy Loading Example</title>
+</head>
+<body>
+    <header>
+        <h1>Lazy Loading</h1>
+    </header>
+    <main>
+        <img src="images/a.jpg" alt="Image 1" loading="lazy" class="lazy-img">
+        <img src="images/b.jpg" alt="Image 2" loading="lazy" class="lazy-img">
+        <img src="images/c.jpg" alt="Image 3" loading="lazy" class="lazy-img">
+        <img src="images/d.jpg" alt="Image 4" loading="lazy" class="lazy-img">
+        <img src="images/e.jpg" alt="Image 5" loading="lazy" class="lazy-img">
+        <img src="images/f.jpg" alt="Image 6" loading="lazy" class="lazy-img">
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Johannes Masebe, South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>

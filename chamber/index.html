@@ -7,6 +7,7 @@
     <meta name="keywords" content="Cape Town, Chamber of Commerce, business, networking, economic development">
     <meta name="author" content="Johannes Masebe">
     <title>Cape Town Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalise.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial">
@@ -19,27 +20,54 @@
 <body>
     <header>
         <h1>Cape Town Chamber of Commerce</h1>
-        <!-- Navigation goes here -->
+        <nav class="navigation">
+            <a class="active" href="#home">Home</a>
+            <a href="#events">Events</a>
+            <a href="#join">Join</a>
+        </nav>
+        <button id="menu" title="Menu" onclick="toggleMenu()">☰</button>
     </header>
     <main>
-        <!-- Hero image, CTA, events, weather, and spotlights -->
-        <section>
-            <h2>Welcome to the Cape Town Chamber of Commerce</h2>
-            <p>Our mission is to foster a healthy and thriving business environment in Cape Town. We provide networking opportunities, resources, and advocacy for businesses in the area.</p>
-            <p>Join us at our next event to learn more about how we can help your business grow.</p>
-            <a href="events.html">Upcoming Events</a>
+        <section id="hero">
+            <img src="images/cape-town-image.webp" alt="Cape Town Skyline">
+            <section id="cta-overlay">
+                <div class="cta-content">
+                    <h2>Join the Cape Town Chamber of Commerce</h2>
+                    <p>Discover opportunities, connect with businesses, and drive growth in Cape Town.</p>
+                    <a href="#join" class="cta-button">Join Now</a>
+                </div>
+            </section>
         </section>
-        <section>
-            <h2>Weather</h2>
-            <p>Check the weather in Cape Town before you head out to our next event.</p>
-            <a href="https://weather.com/weather/today/l/f4e2b701734222a866da1bb89e7754f26eaac8dc49910a132820913f6213dc6a">Cape Town Weather</a>
+        <section id="content-cards">
+            <div class="card" id="events">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li>Business Networking Mixer - March 15th</li>
+                    <li>Cape Town Business Expo - April 5th</li>
+                    <li>Business Networking Mixer - June 18th</li>
+                </ul>
+            </div>
+            <div class="card" id="weather">
+                <h2>Current Weather</h2>
+                <div class="weather-card">
+                    <p>Temperature: 24°C</p>
+                    <p>Condition: Sunny</p>
+                    <!-- Add more weather details -->
+                </div>
+            </div>
+            <div class="card" id="spotlights">
+                <h2>Company Spotlights</h2>
+                <div class="spotlight">
+                    <img src="images/logo_here.png" alt="Company Logo 1" loading="lazy" >
+                    <p>ABC Solutions - Providing innovative business solutions.</p>
+                </div>
+                <div class="spotlight">
+                    <img src="images/mini_logo2.png" alt="Company Logo 2" loading="lazy">
+                    <p>XYZ Technologies - Leaders in cutting-edge technology.</p>
+                </div>
+                <!-- Add more spotlight items -->
+            </div>
         </section>
-        <section>
-            <h2>Spotlights</h2>
-            <p>Learn more about some of our members and their businesses.</p>
-            <a href="spotlights.html">Member Spotlights</a>
-        </section>
-
     </main>
     <footer>
         <p>&copy; <span id="currentYear"></span> Johannes Masebe, South Africa</p>
