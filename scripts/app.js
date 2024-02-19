@@ -19,7 +19,6 @@ async function getWeather() {
     try {
         const response = await fetch(apiUrl);
         const data = await response.json();
-        console.log('Weather data:', data);
 
         const temperature = data.main.temp;
         const description = data.weather[0].description;
