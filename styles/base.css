@@ -29,7 +29,7 @@ header span {
 #mode {
     cursor: pointer;
     position: absolute;
-    right: 60px; /* Adjust based on layout */
+    right: 60px;
 }
 
 h1 {
@@ -38,10 +38,11 @@ h1 {
 }
 
 .navigation {
+    display: none;
     background-color: grey;
 }
 
-.navigation.active { /* Adjusted class for showing the menu */
+.navigation.active { 
     display: block;
 }
 
@@ -78,6 +79,12 @@ h1 {
     cursor: pointer;
 }
 
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
 .hero-image {
     width: 100%; 
     height: auto;
@@ -89,7 +96,7 @@ h1 {
     bottom: 0;
     background: rgba(0, 0, 0, 0.3); 
     color: #fff;
-    padding: 10px;
+    padding: 20px 0 20px 0;
     text-align: center;
 }
 
