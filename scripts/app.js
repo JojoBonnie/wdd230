@@ -10,7 +10,7 @@ numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
 
 // Weather API
-// const apiKey = '932029a2b2dfa7faced20efd28c256d8';
+const apiKey = '932029a2b2dfa7faced20efd28c256d8';
 const city = 'Cape Town,ZA'; 
 
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
