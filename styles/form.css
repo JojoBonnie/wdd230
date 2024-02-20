@@ -1,0 +1,99 @@
+/* Pseudo-class CSS variables */
+:root {
+    --primary-color: #444;
+    --secondary-color: #2ecc71;
+    --background-color: #ecf0f1;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form select
+{
+    display: block;
+    background-color: #eee;
+    color: #555;
+    width: 100%;
+    /* max-width: 600px; */
+    padding: .5rem;
+    font-size: 1.2rem;
+    border: solid 1px #999;
+    border-radius: 6px;
+    appearance: none;
+}
+
+.form input[type="range"] {
+    width: 100%;    
+}
+
+.form input:required {
+    border-color: red;
+}
+
+.form input:required:valid {
+    border-color: green;
+}
+
+.form input[type="submit"] {
+    background-color: #666;
+    color: #fff;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #444;
+}
+
+
+
+
+/* Use the variables in your existing CSS rules */
+body {
+    background-color: var(--background-color);
+}
+
+
+#passwordError {
+    color: red;
+}
+
+#pageRating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	margin-bottom: 0;
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0 0 0 6%; 
+    width: 94%;
+}
+
+#rangevalues option {
+    margin-top: 0;
+	flex: 1 1 auto;
+}
+
+.selection {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: larger;
+}

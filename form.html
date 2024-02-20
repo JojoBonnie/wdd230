@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="WDD 230 - Web Frontend Development, Johannes Masebe course assignment portal">
+    <meta name="author" content="Johannes Masebe">
+    <title>Johannes Masebe - WDD 230 - Web Frontend Development</title>
+    <link rel="icon" href="/chamber/images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
+    <meta property="og:title" content="Johannes Masebe - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.capetown.travel/wp-content/uploads/2022/06/Robben-Island.webp">
+    <meta property="og:url" content="https://www.capetown.travel/">
+</head>
+<body>
+    <header>
+        <img src="images/profile_pic.webp" alt="profile_picture">
+        <span>Johannes Masebe</span>
+        <div id="mode" title="Toggle Dark Mode" onclick="toggleDarkMode()">🌙</div>
+        <button id="menu" title="Menu" onclick="toggleMenu()">☰</button>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li class="active"><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <main>
+            <h1>Contact Form</h1>
+    
+            <form class="form" id="contactForm" action="record.html" method="get">
+                <label>Username:<input type="text" id="username" name="username" required></label>
+                
+    
+                <label>Password:<input type="password" id="password" name="password" pattern="^[a-zA-Z0-9]{8,}$" required>
+                </label>
+                
+                <label>Confirm Password:<input type="password" id="confirmPassword" name="confirmPassword" pattern="^[a-zA-Z0-9]{8,}$" required></label>
+                <div id="passwordError"></div>
+                
+                <label>Email:<input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                    title="Please enter a valid email address"></label>
+    
+                <label>Page Rating:<input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" list="rangevalues"></label>
+                
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Johannes Masebe, South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/navigationMenu.js"></script>
+    <script src="scripts/darkModeToggle.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
