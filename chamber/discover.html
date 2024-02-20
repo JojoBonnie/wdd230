@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Cape Town through demographic content, statistics, and area imagery.">
+    <meta name="keywords" content="Cape Town, Discover, demographics, statistics, attractions">
+    <meta name="author" content="Johannes Masebe">
+    <title>Discover Cape Town - Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalise.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 768px)">
+    <link rel="icon" href="/chamber/images/favicon.ico">
+    <meta property="og:title" content="Johannes Masebe - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.capetown.travel/wp-content/uploads/2022/06/Robben-Island.webp">
+    <meta property="og:url" content="https://www.capetown.travel/">
+</head>
+<body>
+    <header>
+        <h1>Cape Town Chamber of Commerce</h1>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a class="active" href="discover.html">Discover</a>
+            <a href="#events">Events</a>
+            <a href="#join">Join</a>
+        </nav>
+        <button id="menu" title="Menu" onclick="toggleMenu()">☰</button>
+    </header>
+    <main class="grid-layout">
+        <section id="sidebar">
+            <!-- Sidebar Content -->
+            
+            
+            <div class="card">
+                <h2>Discover Cape Town</h2>
+                <div id="visitMessage"></div>
+                <p>Discover Cape Town through motivational content, statistics, and area imagery.</p>
+            </div>
+
+            <div class="card">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li>Business Networking Mixer - March 15th</li>
+                    <li>Cape Town Business Expo - April 5th</li>
+                    <li>Business Networking Mixer - June 18th</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Message from the Mayor</h2>
+                <p>Welcome to Cape Town, a city of rich history, diverse culture, and economic opportunity. I invite you to explore our city and discover the many reasons to invest in Cape Town.</p>
+            </div>
+
+            <div class="card">
+                <h2>Area Statistics</h2>
+                <ul>
+                    <li>Population: 4.62 million</li>
+                    <li>Median Age: 26.5</li>
+                    <li>Total Businesses: 10,000</li>
+                    <li>Median Income: $45,000</li>
+                </ul>
+            </div>
+            
+
+        </section>
+        <section id="main-content">
+            <!-- Local Photos Gallery -->
+            <div class="gallery">
+                <!-- Image 1 -->
+                <figure>
+                    <img src="../chamber/images/k.jpg" alt="Motivation 1" loading="lazy" class="lazy-img" width="400" height="600">
+                    <figcaption>Motivation 1</figcaption>
+                </figure>
+                <!-- Image 2 -->
+                <figure>
+                    <img src="../chamber/images/b.jpg" alt="Motivation 2" loading="lazy" class="lazy-img" width="400" height="600">
+                    <figcaption>Motivation 2</figcaption>
+                </figure>
+                <!-- Image 3 -->
+                <figure>
+                    <img src="../chamber/images/c.jpg" alt="Motivation 3" loading="lazy" class="lazy-img" width="400" height="600">
+                    <figcaption>Motivation 3</figcaption>
+                </figure>
+                <!-- Image 4 -->
+                <figure>
+                    <img src="../chamber/images/d.jpg" alt="Motivation 4" loading="lazy" class="lazy-img" width="400" height="600">
+                    <figcaption>Motivation 4</figcaption>
+                </figure>
+                <!-- Image 5 -->
+                <figure>
+                    <img src="../chamber/images/e.jpg" alt="Motivation 5" loading="lazy" class="lazy-img" width="400" height="600">
+                    <figcaption>Motivation 5</figcaption>
+                </figure>
+                <!-- Image 6 -->
+                <figure>
+                    <img src="../chamber/images/f.jpg" alt="Motivation 6" loading="lazy" class="lazy-img" width="400" height="600">
+                    <figcaption>Motivation 6</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Johannes Masebe, South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/navigationMenu.js"></script>
+    <script src="scripts/discover.js"></script>
+</body>
+</html>

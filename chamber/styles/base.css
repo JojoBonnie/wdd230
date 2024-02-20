@@ -147,3 +147,24 @@ main {
     height: auto;
 }
 
+.lazy-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+    background: #000;
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+

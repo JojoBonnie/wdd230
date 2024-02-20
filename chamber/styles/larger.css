@@ -24,11 +24,19 @@
     }
 
 
-    main {
+    .flex-layout {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
+
+    .grid-layout {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+
+    }
+
 
     #cta-overlay {
         width: 50%;
@@ -48,5 +56,18 @@
         background-color: rgba(255, 255, 255, 0.8);
         padding: 1rem;
         border-radius: 10px;
+    }
+
+    #sidebar .card {
+        width: 100%;
+    }
+
+    .lazy-img {
+        width: 400px;
+        height: auto;
+    }
+
+    .lazy-img:hover {
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
     }
 }
