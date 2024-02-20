@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json())
         .then(data => {
             displayMembers(data.members);
-            toggleView(); // Set the initial view
+            toggleView();
         });
 
     viewToggle.addEventListener('change', toggleView);
@@ -19,7 +19,7 @@ function displayMembers(members) {
     membersContainer.innerHTML = '';
         members.forEach(member => {
             const memberCard = document.createElement('div');
-            memberCard.className = 'card'; // Use 'card' instead of 'row' for consistency
+            memberCard.className = 'card';
 
             memberCard.innerHTML = `
                 <img src="images/${member.image}" alt="${member.name} Logo">
