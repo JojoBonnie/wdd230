@@ -1,5 +1,3 @@
-/* normalize.css */
-
 /* BEGIN: Reset styles */
 html,
 body,
@@ -99,8 +97,3 @@ table {
     border-spacing: 0;
 }
 /* END: Reset styles */
-
-/* BEGIN: Normalize styles */
-/* Add your normalize styles here */
-
-/* END: Normalize styles */
