@@ -10,18 +10,19 @@ table {
 }
 
 caption {
-    font-size: 1.5em;
+    caption-side: bottom;
+    font-size: 1rem;
     margin-bottom: 10px;
 }
 
 th, td {
     padding: 12px;
-    text-align: left;
+    text-align: center;
     border: 1px solid #ddd;
 }
 
 th {
-    background-color: #3498db;
+    background-color: #333;
     color: white;
 }
 
@@ -31,4 +32,12 @@ tbody tr:nth-child(even) {
 
 tbody tr:hover {
     background-color: #bdc3c7;
+}
+
+thead th:first-child {
+    background-color: black;
+}
+
+tbody td:first-child {
+    font-weight: bold;
 }
