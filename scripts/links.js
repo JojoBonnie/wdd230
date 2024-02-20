@@ -1,34 +1,28 @@
-const baseURL = "https://jojobonnie.github.io/wdd230"; 
-const linksURL = `${baseURL}/data/links.json`;
+const linksURL = `../data/links.json`;
 
 async function getLinks() {
   const response = await fetch(linksURL);
   const data = await response.json();
-  displayLinks(data);
+  displayLinks(data.weeks);
 }
 
 function displayLinks(weeks) {
-  const activityList = document.querySelector('.card ul');
+    const activityList = document.getElementById('activityList');
 
-  weeks.forEach(week => {
-    const weekElement = document.createElement('li');
-    const weekHeading = document.createElement('h3');
-    weekHeading.textContent = week.week;
-    weekElement.appendChild(weekHeading);
-
-    const linksList = document.createElement('ul');
-    week.links.forEach(link => {
-      const listItem = document.createElement('li');
-      const anchor = document.createElement('a');
-      anchor.href = `${baseURL}/${link.url}`;
-      anchor.textContent = link.title;
-      listItem.appendChild(anchor);
-      linksList.appendChild(listItem);
+    weeks.forEach(week => {
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `<strong>${week.week}:</strong> ${formatLinks(week.links)}`;
+        activityList.appendChild(listItem);
     });
-
-    weekElement.appendChild(linksList);
-    activityList.appendChild(weekElement);
-  });
 }
+
+function formatLinks(links) {
+    return links.map(link => `<a href="${link.url}">${getTitle(link.title)}</a>`).join(' | ');
+}
+
+function getTitle(title) {
+    return title.replace(/-/g, ' ');
+}
+
 
 getLinks();
