@@ -177,10 +177,23 @@ main {
 }
 
 .weather-card {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.03);
     padding: 1rem;
     border-radius: 5px;
 }
+
+.weather-card h3 {
+    color: #005A9C;
+    font-size: 1rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.spotlight {
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
 
 .spotlight img {
     width: 10%;
@@ -224,6 +237,32 @@ main {
 
 .list-view div:nth-child(odd) {
 	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    padding: 1rem;
+}
+
+.banner button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.banner button:hover {
+    background-color: #FFA500;
+    font-weight: bolder;
 }
 
 

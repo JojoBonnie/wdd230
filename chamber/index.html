@@ -18,6 +18,10 @@
     <meta property="og:url" content="https://www.capetown.travel/">
 </head>
 <body>
+    <div id="meet-greet-banner" class="banner">
+        <span>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.!</span>
+        <button onclick="closeBanner()">Close</button>
+    </div>
     <header>
         <h1>Cape Town Chamber of Commerce</h1>
         <nav class="navigation">
@@ -51,22 +55,15 @@
             <div class="card" id="weather">
                 <h2>Current Weather</h2>
                 <div class="weather-card">
-                    <p>Temperature: 24°C</p>
-                    <p>Condition: Sunny</p>
+
                     <!-- Add more weather details -->
                 </div>
             </div>
             <div class="card" id="spotlights">
                 <h2>Company Spotlights</h2>
-                <div class="spotlight">
-                    <img src="images/logo_here.png" alt="Company Logo 1" loading="lazy" >
-                    <p>ABC Solutions - Providing innovative business solutions.</p>
+                <div id="spotlights-container">
+                    <!-- Spotlight advertisements will be dynamically inserted here -->
                 </div>
-                <div class="spotlight">
-                    <img src="images/mini_logo2.png" alt="Company Logo 2" loading="lazy">
-                    <p>XYZ Technologies - Leaders in cutting-edge technology.</p>
-                </div>
-                <!-- Add more spotlight items -->
             </div>
         </section>
     </main>
