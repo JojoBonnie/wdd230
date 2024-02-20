@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +17,7 @@
     <meta property="og:image" content="https://www.capetown.travel/wp-content/uploads/2022/06/Robben-Island.webp">
     <meta property="og:url" content="https://www.capetown.travel/">
 </head>
+
 <body>
     <header>
         <img src="images/profile_pic.webp" alt="profile_picture">
@@ -38,32 +40,25 @@
                 <source srcset="images/hero-medium.webp" media="(max-width: 960px)">
                 <img src="images/hero-large.webp" alt="Favorite Temple" class="hero-image" width="600" height="400">
             </picture>
-            <div class="overlay">Johannesburg Temple</div>     
+            <div class="overlay">Johannesburg Temple</div>
         </div>
-        
+
         <h1>WDD 230: Web Frontend Development</h1>
-        <section class="card">
+        <section class="card" id="learningActivities">
             <h2>Learning Activities</h2>
-            <ul>
-                <li>Week 01: <a href="week01/holygrail.html">Holy Grail</a>, <a href="week01/chamber-site-plan.html">Site Plan</a>, <a href="week01/media-query.html">Media Query</a></li>
-                <li>Week 02: <a href="week02/bom.html">BOM</a>, <a href="week02/design.html">Design</a>, <a href="https://codepen.io/J-Masebe/pen/WNmmwjO">CodePen - Hamburger Menu</a></li>
-                <li>Week 03: <a href="week03/images/landscape.webp">WebP</a>, <a href="week03/responsive-images.html">Responsive Images</a>, <a href="week03/bom.html">Local Storage</a></li>
-                <li>Week 04: <a href="https://codepen.io/J-Masebe/pen/QWoPjjm">CodePen - CSS Pseudo-Classes</a>, <a href="week04/images/w04_W3C_exercises.png">W3C - CSS Combinators</a>, 
-                    <a href="week04/tablebuild.html">HTML Tables</a>, <a href="/Form-start/">HTML Forms</a></li>
-            
-                <li>Week 05: <a href="https://codepen.io/J-Masebe/pen/rNRbpYM">Pseudo Element</a>, <a href="week05/new-ward-members.json">JSON</a>, <a href="week05/prophets.html">Prophets</a></li>
-                <li>Week 06: <a href="week02/design.html">Activity</a></li>
-            </ul>
+            <ul id="activityList"></ul>
         </section>
+
         <section class="card">
             <h2>Information</h2>
             <p><span class="label">Current Weather: </span><span class="weather" id="weather-info"></span></p>
-            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>         
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
         </section>
         <div class="card" id="map-card">
-            <iframe src="https://www.google.com/maps/d/embed?mid=1W6FiG580WItytjzonX7QIFkzYoZXh1I&hl=en&ehbc=2E312F" title="maps" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1W6FiG580WItytjzonX7QIFkzYoZXh1I&hl=en&ehbc=2E312F"
+                title="maps" loading="lazy"></iframe>
         </div>
-        
+
     </main>
     <footer>
         <p>&copy; <span id="currentYear"></span> Johannes Masebe, South Africa</p>
@@ -73,5 +68,7 @@
     <script src="scripts/navigationMenu.js"></script>
     <script src="scripts/darkModeToggle.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
+
 </html>

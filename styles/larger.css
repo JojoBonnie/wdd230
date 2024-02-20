@@ -45,8 +45,7 @@
     #map-card {
         grid-column: 1 / -1;
         text-align: center;
-        margin: 0 auto 0 0;
-        width: 100%; 
+        width: 97%; 
     }
 
     #map-card iframe {
