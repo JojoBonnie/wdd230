@@ -136,6 +136,46 @@ main {
     border-radius: 10px;
 }
 
+.row {
+    display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.row img {
+    display: none;
+}
+
+
+#viewSelection  h2 {
+    color: #005A9C; /* Choose your preferred color */
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Style for the toggle view container */
+#toggle-view {
+    margin-bottom: 1rem;
+}
+
+/* Style for the label and select */
+#viewSelection label {
+    font-size: 1rem;
+    margin: 0 2rem 0 2rem;
+}
+
+#viewSelection select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff; 
+    color: #333;
+    cursor: pointer;
+    width: 10rem;
+}
+
 .weather-card {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 1rem;
@@ -164,6 +204,26 @@ main {
     to {
         opacity: 1;
     }
+}
+
+.grid-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.list-view {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.list-view div:nth-child(even) {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.list-view div:nth-child(odd) {
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
 

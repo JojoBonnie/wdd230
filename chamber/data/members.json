@@ -1,0 +1,96 @@
+{
+    "members": [
+        {
+            "name": "Company A",
+            "address": "123 Main St, Cityville",
+            "phone": "555-1234",
+            "website": "http://www.companyA.com",
+            "image": "a.jpg",
+            "membershipLevel": "Gold",
+            "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "name": "Company B",
+            "address": "456 Elm St, Townsville",
+            "phone": "555-5678",
+            "website": "http://www.companyB.com",
+            "image": "b.jpg",
+            "membershipLevel": "Silver",
+            "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "name": "Company C",
+            "address": "789 Oak St, Villagetown",
+            "phone": "555-9012",
+            "website": "http://www.companyC.com",
+            "image": "c.jpg",
+            "membershipLevel": "Bronze",
+            "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "name": "Company D",
+            "address": "1011 Pine St, Hamletville",
+            "phone": "555-3456",
+            "website": "http://www.companyD.com",
+            "image": "d.jpg",
+            "membershipLevel": "Bronze",
+            "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "name": "Company E",
+            "address": "1213 Cedar St, Villageville",
+            "phone": "555-7890",
+            "website": "http://www.companyE.com",
+            "image": "e.jpg",
+            "membershipLevel": "Bronze",
+            "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "name": "Company F",
+            "address": "1415 Maple St, Citytown",
+            "phone": "555-2345",
+            "website": "http://www.companyF.com",
+            "image": "f.jpg",
+            "membershipLevel": "Bronze",
+            "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "name": "Company G",
+            "address": "1617 Birch St, Townville",
+            "phone": "555-6789",
+            "website": "http://www.companyG.com",
+            "image": "g.jpg",
+            "membershipLevel": "Bronze",
+            "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "name": "Company H",
+            "address": "1819 Walnut St, Villagetown",
+            "phone": "555-1234",
+            "website": "http://www.companyH.com",
+            "image": "h.jpg",
+            "membershipLevel": "Bronze",
+            "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "name": "Company I",
+            "address": "2021 Pine St, Hamletville",
+            "phone": "555-5678",
+            "website": "http://www.companyI.com",
+            "image": "i.jpg",
+            "membershipLevel": "Bronze",
+            "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "name": "Company J",
+            "address": "2223 Cedar St, Villageville",
+            "phone": "555-9012",
+            "website": "http://www.companyJ.com",
+            "image": "j.jpg",
+            "membershipLevel": "Bronze",
+            "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+
+    ]
+  }
+  
