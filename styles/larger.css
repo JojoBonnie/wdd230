@@ -26,7 +26,13 @@
     main h1 {
         grid-column: 1 / -1;
         text-align: center; 
+    }
 
+    main form {
+        grid-column: 1 / -1;
+        margin: 0 auto;
+        max-width: 600px;
+        /* text-align: center;  */
     }
 
     .hero {
