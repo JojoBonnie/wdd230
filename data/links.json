@@ -92,16 +92,7 @@
             "title": "Weather"
           }
         ]
-      },
-      {
-        "week": "Week 06",
-        "links": [
-          {
-            "url": "week02/design.html",
-            "title": "Activity"
-          }
-        ]
-      }
+      }      
     ]
   }
   
