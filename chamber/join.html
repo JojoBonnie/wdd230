@@ -1,126 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site plan for the Cape Town Chamber of Commerce website">
-    <meta name="keywords" content="Cape Town, Chamber of Commerce, business, networking, economic development">
-    <meta name="author" content="Johannes Masebe">
-    <title>Cape Town Chamber of Commerce</title>
-    <link rel="stylesheet" href="styles/normalise.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 768px)">
-    <link rel="stylesheet" href="styles/join.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial">
-    <link rel="icon" href="/chamber/images/favicon.ico">
-    <meta property="og:title" content="Johannes Masebe - WDD 230 - Web Frontend Development">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.capetown.travel/wp-content/uploads/2022/06/Robben-Island.webp">
-    <meta property="og:url" content="https://www.capetown.travel/">
-</head>
-<body>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Join or become a member of the Cape Town Chamber of Commerce"
+    />
+    <meta
+      name="keywords"
+      content="Cape Town, Chamber of Commerce, business, networking, economic development"
+    />
+    <meta name="author" content="Johannes Masebe" />
+    <title>Join Cape Town Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalise.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link
+      rel="stylesheet"
+      href="styles/larger.css"
+      media="screen and (min-width: 768px)"
+    />
+    <link rel="stylesheet" href="styles/join.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Arial"
+    />
+    <link rel="icon" href="/chamber/images/favicon.ico" />
+    <meta
+      property="og:title"
+      content="Johannes Masebe - WDD 230 - Web Frontend Development"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://www.capetown.travel/wp-content/uploads/2022/06/Robben-Island.webp"
+    />
+    <meta property="og:url" content="https://www.capetown.travel/" />
+  </head>
+  <body>
     <header>
-        <h1>Cape Town Chamber of Commerce</h1>
-        <nav class="navigation">
-            <a href="/chamber/">Home</a>
-            <a href="discover.html">Discover</a>
-            <a href="#events">Events</a>
-            <a href="#join" class="active">Join</a>
-        </nav>
-        <button id="menu" title="Menu" onclick="toggleMenu()">☰</button>
+      <h1>Cape Town Chamber of Commerce</h1>
+      <nav class="navigation">
+        <a href="/chamber/">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html" class="active">Join</a>
+      </nav>
+      <button id="menu" title="Menu" onclick="toggleMenu()">☰</button>
     </header>
     <main class="flex-layout">
-        <section id="form-section">
-            <form action="/chamber/" method="get" class="wf1">
-                <h2>Membership Application Form</h2>
+      <section id="form-section">
+        <form action="thankyou.html" method="get" class="wf1">
+          <h2>Membership Application Form</h2>
 
-                <fieldset>
-                    <legend>Applicant Information</legend>
-                    <label>First Name: <input type="text" id="firstName" name="firstName" required></label>
+          <fieldset>
+            <legend>Applicant Information</legend>
+            <label
+              >First Name:
+              <input type="text" id="firstName" name="firstName" required
+            /></label>
 
-                    <label>Last Name: <input type="text" id="lastName" name="lastName" required></label>
+            <label
+              >Last Name:
+              <input type="text" id="lastName" name="lastName" required
+            /></label>
 
-                    <label>Title/Position: <input type="text" id="position" name="position" pattern="[A-Za-z\s-]+" title="Only letters, spaces, and hyphens are allowed (minimum of seven characters)" required></label>
+            <label
+              >Title/Position:
+              <input
+                type="text"
+                id="position"
+                name="position"
+                pattern="[A-Za-z\s-]+"
+                title="Only letters, spaces, and hyphens are allowed (minimum of seven characters)"
+                required
+            /></label>
 
-                    <label>Email: <input type="email" id="email" name="email" placeholder="example@example.com" required></label>
+            <label
+              >Email:
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@example.com"
+                required
+            /></label>
 
-                    <label>Mobile Phone: <input type="tel" id="phone" name="phone" required></label>
-                </fieldset>
+            <label
+              >Mobile Phone: <input type="tel" id="phone" name="phone" required
+            /></label>
+          </fieldset>
 
-                <fieldset>
-                    <legend>Organization Information</legend>
-                    <label>Business/Organization Name: <input type="text" id="organization" name="organization" required></label>
+          <fieldset>
+            <legend>Organization Information</legend>
+            <label
+              >Business/Organization Name:
+              <input type="text" id="organization" name="organization" required
+            /></label>
 
-                    <label>Membership Level:
-                        <!-- Adjust the following based on your chosen form field -->
-                        <select id="membershipLevel" name="membershipLevel">
-                            <option value="">Select a Membership Level &#9662;</option>
-                            <option value="NP">Non-Profit Membership</option>
-                            <option value="Bronze">Bronze Membership</option>
-                            <option value="Silver">Silver Membership</option>
-                            <option value="Gold">Gold Membership</option>
-                        </select>
-                    </label>
+            <label
+              >Membership Level:
+              <select id="membershipLevel" name="membershipLevel">
+                <option value="">Select a Membership Level &#9662;</option>
+                <option value="NP">Non-Profit Membership</option>
+                <option value="Bronze">Bronze Membership</option>
+                <option value="Silver">Silver Membership</option>
+                <option value="Gold">Gold Membership</option>
+              </select>
+            </label>
 
-                    <label>Business/Organization Description: <textarea id="description" name="description" rows="4"></textarea></label>
-                </fieldset>
-                <input type="hidden" id="timestamp" name="timestamp" value="">
+            <label
+              >Business/Organization Description:
+              <textarea id="description" name="description" rows="4"></textarea>
+            </label>
+          </fieldset>
+          <input type="hidden" id="timestamp" name="timestamp" value="" />
 
-                <input type="submit" value="Submit Application">
-            </form>
-        </section>
+          <input type="submit" value="Submit Application" />
+        </form>
+      </section>
 
-        <section id="benefits">
-            <!-- Display membership benefits based on the selected level -->
-            <!-- You can use a table, list, or any other suitable format -->
-            <h2>Membership Benefits</h2>
-            <p>Choose a membership level to see the benefits</p>
+      <section id="benefits">
+        <h2>Membership Benefits</h2>
+        <p>Choose a membership level to see the benefits</p>
 
-            <h3>Non-Profit Membership</h3>
-            <ul>
-                <li>Access to networking events</li>
-                <li>Access to business resources</li>
-                <li>Access to business advocacy</li>
-                <li>Access to business education</li>
-            </ul>
+        <h3>Non-Profit Membership</h3>
+        <ul>
+          <li>Access to networking events</li>
+          <li>Access to business resources</li>
+          <li>Access to business advocacy</li>
+          <li>Access to business education</li>
+        </ul>
 
-            <h3>Bronze Membership</h3>
-            <ul>
-                <li>Access to networking events</li>
-                <li>Access to business resources</li>
-                <li>Access to business advocacy</li>
-                <li>Access to business education</li>
-                <li>Discounts on business services</li>
-            </ul>
+        <h3>Bronze Membership</h3>
+        <ul>
+          <li>Access to networking events</li>
+          <li>Access to business resources</li>
+          <li>Access to business advocacy</li>
+          <li>Access to business education</li>
+          <li>Discounts on business services</li>
+        </ul>
 
-            <h3>Silver Membership</h3>
-            <ul>
-                <li>Access to networking events</li>
-                <li>Access to business resources</li>
-                <li>Access to business advocacy</li>
-                <li>Access to business education</li>
-                <li>Discounts on business services</li>
-                <li>Access to business mentorship</li>
-            </ul>
+        <h3>Silver Membership</h3>
+        <ul>
+          <li>Access to networking events</li>
+          <li>Access to business resources</li>
+          <li>Access to business advocacy</li>
+          <li>Access to business education</li>
+          <li>Discounts on business services</li>
+          <li>Access to business mentorship</li>
+        </ul>
 
-            <h3>Gold Membership</h3>
-            <ul>
-                <li>Access to networking events</li>
-                <li>Access to business resources</li>
-                <li>Access to business advocacy</li>
-                <li>Access to business education</li>
-                <li>Discounts on business services</li>
-                <li>Access to business mentorship</li>
-                <li>Access to business funding</li>
-            </ul>
-
-        </section>
+        <h3>Gold Membership</h3>
+        <ul>
+          <li>Access to networking events</li>
+          <li>Access to business resources</li>
+          <li>Access to business advocacy</li>
+          <li>Access to business education</li>
+          <li>Discounts on business services</li>
+          <li>Access to business mentorship</li>
+          <li>Access to business funding</li>
+        </ul>
+      </section>
     </main>
     <footer>
-        <p>&copy; <span id="currentYear"></span> Johannes Masebe, South Africa</p>
-        <p id="lastModified"></p>
+      <p>&copy; <span id="currentYear"></span> Johannes Masebe, South Africa</p>
+      <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/navigationMenu.js"></script>
-</body>
+  </body>
 </html>

@@ -1,74 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="WDD 230 - Web Frontend Development, Johannes Masebe course assignment portal">
-    <meta name="author" content="Johannes Masebe">
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="WDD 230 - Web Frontend Development, Johannes Masebe course assignment portal"
+    />
+    <meta name="author" content="Johannes Masebe" />
     <title>Johannes Masebe - WDD 230 - Web Frontend Development</title>
-    <link rel="icon" href="/chamber/images/favicon.ico">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
-    <meta property="og:title" content="Johannes Masebe - WDD 230 - Web Frontend Development">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.capetown.travel/wp-content/uploads/2022/06/Robben-Island.webp">
-    <meta property="og:url" content="https://www.capetown.travel/">
-</head>
+    <link rel="icon" href="/chamber/images/favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+    />
+    <meta
+      property="og:title"
+      content="Johannes Masebe - WDD 230 - Web Frontend Development"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://www.capetown.travel/wp-content/uploads/2022/06/Robben-Island.webp"
+    />
+    <meta property="og:url" content="https://www.capetown.travel/" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <img src="images/profile_pic.webp" alt="profile_picture">
-        <span>Johannes Masebe</span>
-        <div id="mode" title="Toggle Dark Mode" onclick="toggleDarkMode()">🌙</div>
-        <button id="menu" title="Menu" onclick="toggleMenu()">☰</button>
+      <img src="images/profile_pic.webp" alt="profile_picture" />
+      <span>Johannes Masebe</span>
+      <div id="mode" title="Toggle Dark Mode" onclick="toggleDarkMode()">
+        🌙
+      </div>
+      <button id="menu" title="Menu" onclick="toggleMenu()">☰</button>
     </header>
     <nav class="navigation">
-        <ul>
-            <li class="active"><a href="#home">Home</a></li>
-            <li><a href="chamber/">Chamber</a></li>
-            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="form.html">Form</a></li>
-        </ul>
+      <ul>
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="chamber/">Chamber</a></li>
+        <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+        <li><a href="form.html">Form</a></li>
+      </ul>
     </nav>
     <main>
-        <div class="hero">
-            <picture>
-                <source srcset="images/hero-small.webp" media="(max-width: 400px)">
-                <source srcset="images/hero-medium.webp" media="(max-width: 960px)">
-                <img src="images/hero-large.webp" alt="Favorite Temple" class="hero-image" width="600" height="400">
-            </picture>
-            <div class="overlay">Johannesburg Temple</div>
-        </div>
+      <div class="hero">
+        <picture>
+          <source srcset="images/hero-small.webp" media="(max-width: 400px)" />
+          <source srcset="images/hero-medium.webp" media="(max-width: 960px)" />
+          <img
+            src="images/hero-large.webp"
+            alt="Favorite Temple"
+            class="hero-image"
+            width="600"
+            height="400"
+          />
+        </picture>
+        <div class="overlay">Johannesburg Temple</div>
+      </div>
 
-        <h1>WDD 230: Web Frontend Development</h1>
-        <section class="card" id="learningActivities">
-            <h2>Learning Activities</h2>
-            <ul id="activityList"></ul>
-        </section>
+      <h1>WDD 230: Web Frontend Development</h1>
+      <section class="card" id="learningActivities">
+        <h2>Learning Activities</h2>
+        <ul id="activityList"></ul>
+      </section>
 
-        <section class="card">
-            <h2>Information</h2>
-            <p><span class="label">Current Weather: </span><span class="weather" id="weather-info"></span></p>
-            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
-        </section>
-        <div class="card" id="map-card">
-            <iframe src="https://www.google.com/maps/d/embed?mid=1W6FiG580WItytjzonX7QIFkzYoZXh1I&hl=en&ehbc=2E312F"
-                title="maps" loading="lazy"></iframe>
-        </div>
-
+      <section class="card">
+        <h2>Information</h2>
+        <p>
+          <span class="label">Current Weather: </span
+          ><span class="weather" id="weather-info"></span>
+        </p>
+        <p>
+          <span class="label">Number of Visits: </span
+          ><span class="visits"></span>
+        </p>
+      </section>
+      <div class="card" id="map-card">
+        <iframe
+          src="https://www.google.com/maps/d/embed?mid=1W6FiG580WItytjzonX7QIFkzYoZXh1I&hl=en&ehbc=2E312F"
+          title="maps"
+          loading="lazy"
+        ></iframe>
+      </div>
     </main>
     <footer>
-        <p>&copy; <span id="currentYear"></span> Johannes Masebe, South Africa</p>
-        <p id="lastModified"></p>
+      <p>&copy; <span id="currentYear"></span> Johannes Masebe, South Africa</p>
+      <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/navigationMenu.js"></script>
     <script src="scripts/darkModeToggle.js"></script>
     <script src="scripts/app.js"></script>
     <script src="scripts/links.js"></script>
-</body>
-
+  </body>
 </html>
