@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     viewToggle.addEventListener('change', toggleView);
-    console.log('Directory page is loaded');
 });
 
 function displayMembers(members) {
